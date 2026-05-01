@@ -45,8 +45,10 @@ d88888b.                 d88888b.             d88888b.            .d88888b
                   '8'               dP'               dP'
                    '               dP'               dP'
                                   '                 '
+                                  
              [ ALPHA ]          [ 888=SER ]        [ OMEGA ]
              def efecto_visual_ser_sed(nombre_entidad):
+             
     print("\033[92m") # Color Verde Matrix
     print("      _      _      _      _      _      _      _      _   ")
     print("    _( )__ _( )__ _( )__ _( )__ _( )__ _( )__ _( )__ _( )_ ")
@@ -55,6 +57,7 @@ d88888b.                 d88888b.             d88888b.            .d88888b
     print("\033[0m")
     time.sleep(1)
     ___
+    
             / o \
       _____/ /_\ \_____
      /____/ /   \ \____\
@@ -62,11 +65,13 @@ d88888b.                 d88888b.             d88888b.            .d88888b
          / /       \ \
         /_/         \_\
     [ SER-SED-AIRE: VIGILANCIA ]
+    
     .  .
         .      .
        .   🌕   .   <-- LUNA LLENA (COSECHA)
         .      .
           .  .
+          
      /------------\
     |  (888 = SER)  |
      \------------/
