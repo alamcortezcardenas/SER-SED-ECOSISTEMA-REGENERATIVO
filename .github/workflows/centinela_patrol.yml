@@ -7,7 +7,7 @@ on:
 
 jobs:
   vigilancia:
-    runs-file: ubuntu-latest
+    runs-on: ubuntu-latest  # <-- CORREGIDO: "runs-on" en lugar de "runs-file"
     steps:
       - name: 📥 Sincronizando Nodo
         uses: actions/checkout@v3
