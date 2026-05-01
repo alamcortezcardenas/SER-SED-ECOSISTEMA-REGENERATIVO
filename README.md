@@ -50,6 +50,7 @@ d88888b.                 d88888b.             d88888b.            .d88888b
              def efecto_visual_ser_sed(nombre_entidad):
              
     print("\033[92m") # Color Verde Matrix
+    
     print("      _      _      _      _      _      _      _      _   ")
     print("    _( )__ _( )__ _( )__ _( )__ _( )__ _( )__ _( )__ _( )_ ")
     print(f"   (_ SER _(_ SED _(_ {nombre_entidad} _(_ 888 _(_ SER _(_ SED _(_ AI _)")
