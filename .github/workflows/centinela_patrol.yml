@@ -1,0 +1,21 @@
+name: 🛡️ MODO CENTINELA 888
+on:
+  schedule:
+    # Se ejecuta de lunes a viernes a las 7:00 AM (Apertura de bolsa)
+    - cron: '0 14 * * 1-5' 
+  workflow_dispatch: # Permite ejecución manual desde GitHub
+
+jobs:
+  vigilancia:
+    runs-file: ubuntu-latest
+    steps:
+      - name: 📥 Sincronizando Nodo
+        uses: actions/checkout@v3
+
+      - name: 🐍 Activando Entorno Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: 📡 Ejecutando Telemetría
+        run: python SER_SED_MESSENGER.py
