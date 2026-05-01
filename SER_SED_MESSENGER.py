@@ -9,10 +9,11 @@ from email.mime.multipart import MIMEMultipart
 
 class SERMessenger:
     def __init__(self):
-        self.sender_email = "tu_bunker_bot@gmail.com" # Un correo secundario para el bot
+        # Configuración del servidor de correo seguro
+        self.sender_email = "alamcortezcardenas@gmail.com" 
         self.receiver_email = "alamcortezcardenas@gmail.com"
-        # NOTA: Necesitas generar una "App Password" en Google para seguridad
-        self.password = "TU_APP_PASSWORD_AQUI" 
+        # La llave generada: oeca uhkx itpf neky
+        self.password = "oeca uhkx itpf neky" 
 
     def enviar_alerta(self, ticker, motivo, precio):
         mensaje = MIMEMultipart()
@@ -29,6 +30,7 @@ class SERMessenger:
         ESTADO: EL PASADO SE REPITE / VOLUMEN DE ÉLITE DETECTADO.
         
         Sincronización completa al 30 de abril de 2026.
+        Ubicación: Bugambilias, Mexicali, B.C.
         """
         mensaje.attach(MIMEText(cuerpo, "plain"))
 
@@ -36,11 +38,11 @@ class SERMessenger:
             with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
                 server.login(self.sender_email, self.password)
                 server.sendmail(self.sender_email, self.receiver_email, mensaje.as_string())
-            print(f"📧 Alerta enviada a {self.receiver_email}")
+            print(f"📧 Alerta de Élite enviada a {self.receiver_email}")
         except Exception as e:
-            print(f"❌ Error en la transmisión: {e}")
+            print(f"❌ Error en la transmisión del nodo: {e}")
 
 if __name__ == "__main__":
     messenger = SERMessenger()
-    # Prueba de enlace
-    messenger.enviar_alerta("SABR", "Sincronicidad CRONOS detectada", 5.0)
+    # Prueba inicial de conexión del búnker
+    messenger.enviar_alerta("PRUEBA_EXITOSA", "Protocolo de comunicación activado", 0.0)
