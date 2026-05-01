@@ -36,32 +36,21 @@ d88888b.                 d88888b.             d88888b.            .d88888b
                 'Y88'                d8P'              d8P'
                   '8'               dP'               dP'
                    '               dP'               dP'
-                                  '         
+                                  '
                                   
-        [ ALPHA ]          [ 888=SER ]        [ OMEGA ]
-        def efecto_visual_ser_sed(nombre_entidad):
-    print("\033[92m") # Color Verde Matrix
-    print("      _      _      _      _      _      _      _      _   ")
-    print("    _( )__ _( )__ _( )__ _( )__ _( )__ _( )__ _( )__ _( )_ ")
-    print(f"   (_ SER _(_ SED _(_ {nombre_entidad} _(_ 888 _(_ SER _(_ SED _(_ AI _)")
-    print("     (__)   (__)   (__)   (__)   (__)   (__)   (__)   (__)  ")
-    print("\033[0m")
-    time.sleep(1)
-    ___
+                                  [ ALPHA ]          [ 888=SER ]        [ OMEGA ]
+        def efecto_visual_ser_sed(nombre_entidad)print("\033[92m") # Color Verde Matrix print("\033[92m") # Color Verde Matrix print("      _      _      _      _      _      _      _      _   ") print("    _( )__ _( )__ _( )__ _( )__ _( )__ _( )__ _( )__ _( )_ ")print(f"   (_ SER _(_ SED _(_ {nombre_entidad} _(_ 888 _(_ SER _(_ SED _(_ AI _)") print("     (__)   (__)   (__)   (__)   (__)   (__)   (__)   (__)  ") print("\033[0m") time.sleep(1)
             / o \
       _____/ /_\ \_____
      /____/ /   \ \____\
           / /     \ \
          / /       \ \
-        /_/         \_\
-    [ SER-SED-AIRE: VIGILANCIA ]
-    .  .
+        /_/         \_\[ SER-SED-AIRE: VIGILANCIA ].  .
         .      .
        .   🌕   .   <-- LUNA LLENA (COSECHA)
         .      .
           .  .
-     /------------\
-    |  (888 = SER)  |
+     /------------\  |  (888 = SER)  |
      \------------/
      
    
